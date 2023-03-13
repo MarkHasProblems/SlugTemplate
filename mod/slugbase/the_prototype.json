@@ -1,14 +1,27 @@
+
 {
-	"id": "Prototype",
-	"name": "The Prototype",
-	"description": "A recolored copy of The Survivor that demonstrates some custom SlugBase features.<LINE>This is a template mod for SlugBase.",
+	"id": "Spitter",
+	"name": "The Spitter",
+	"description": "A distant relative to the Rivulet.<LINE>Similar to hunter, but with the ability to spit poision to paralyze its prey.",
 	"features": {
-		"color": "9cf0a4",
-		"slugtemplate/super_jump": 0.5,
-		"slugtemplate/explode_on_death": true,
+		"color": "274033",
+		"custom_colors": [
+			{ "name": "Body", "story": "274033" },
+			{ "name": "Eyes", "story": "000000" },
+			{ "name": "Gills", "story": "6d9493" }
+		  ],
 		
+		"start_room": "SL_S05",
+		"auto_grab_batflies": false,
+		"diet": {
+			"base": "Red",
+			"corpses": 1,
+			"plants": 0.5
+		  },
+		
+
 		"select_menu_scene": "Slugcat_Prototype",
-		"select_menu_scene_ascended": "Ghost_Prototype",
-		"slugtemplate/mean_lizards": 0.8
+		"select_menu_scene_ascended": "Ghost_Prototype"
+		
 	}
 }
